@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Title of the document</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+<style>/*http://demos.jquerymobile.com/1.2.0/docs/buttons/buttons-icons.html*/</style>
+    <body>
+        <div data-role="page" id="pageone">
+              <div data-role="header">
+                <h1>Eleccion de Alumno para evaluar</h1>
+              </div>
+
+              <div data-role="main" class="ui-content">
+                <form method="post" action="trato.php" data-ajax="false">
+                    <div data-role="fieldcontain">
+	                   <label for="select-choice-1" class="select">Selecciona el alumno</label>
+                        <select name="alumno" id="select-choice-1">
+                            <option value="Alvaro">Alvaro</option>
+                            <option value="Juan">Juan</option>
+                            <option value="Pedro">Pedro</option>
+                            <option value="Carlos">Carlos</option>
+                        </select>
+                    </div>
+                    <div data-role="fieldcontain">
+	                   <label for="select-choice-1" class="select">Selecciona el curso</label>
+                        <select name="curso" id="select-choice-1">
+                            <option value="1 DAW">1 DAW</option>
+                            <option value="2 DAW">2 DAW</option>
+                            <option value="1 DAM">1 DAM</option>
+                            <option value="2 DAM">2 DAM</option>
+                        </select>
+                    </div>
+                    <input type="submit" value="Entrar" name="botonenviar"/>
+                </form>
+              </div>
+              <div data-role="footer" style="padding-left:20px;">
+                <a href="index.html" data-role="button" class="botonesfooter">Link button</a> 
+                <a href="index.html" data-role="button" class="botonesfooter">Link button</a> 
+                <a href="index.html" data-role="button" class="botonesfooter">Link button</a> 
+              </div>
+        </div>  
+    </body>
+</html> 

@@ -1,0 +1,33 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Title of the document</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+<style>/*http://demos.jquerymobile.com/1.2.0/docs/buttons/buttons-icons.html*/</style>
+    <body>
+        <div data-role="page" id="pageone">
+              <div data-role="header">
+                <h1>Practica JQuery Mobile</h1>
+              </div>
+
+              <div data-role="main" class="ui-content">
+                <form method="post" action="eleccion.php" data-ajax="false">
+                      <label for="fname">Usuario:</label><input type="text" name="user" id="fname">
+                      <label for="fname">Contraseña:</label><input type="text" name="pass" id="fname">
+                      <input type="submit" value="Entrar" name="botonenviar" data-icon="arrow-r"/>
+                </form>
+              </div>
+
+              <div data-role="footer" style="padding-left:20px;">
+                <a href="index.html" data-role="button" data-icon="delete" class="botonesfooter">Cerrar sesion</a> 
+                <a href="eleccion.php" data-role="button" data-icon="grid" class="botonesfooter">Alumnos</a> 
+                <a href="index.html" data-role="button" data-icon="home" class="botonesfooter">Login</a> 
+              </div>
+        </div>  
+    </body>
+</html> 
